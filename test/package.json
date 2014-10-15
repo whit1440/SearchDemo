@@ -1,0 +1,13 @@
+{
+  "name": "Karma tests",
+  "devDependancies": {
+    "karma": "^0.10.9",
+    "karma-chrome-launcher": "",
+    "karma-jasmine":"*",
+    "karma-coverage":"*",
+    "karma-htmlfile-reporter":"*",
+    "karma-junit-reporter":"*",
+    "karma-phantomjs-launcher":"*",
+    "karma-json-preprocessor": "*"
+  }
+}
