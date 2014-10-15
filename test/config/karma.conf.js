@@ -29,18 +29,13 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
 
     plugins: [
-      'karma-chrome-launcher',
       'karma-jasmine',
       'karma-coverage',
       'karma-htmlfile-reporter',
       'karma-junit-reporter',
-      'karma-phantomjs-launcher',
-      'karma-json-preprocessor'
+      'karma-phantomjs-launcher'
     ],
-    reporters: ['html', 'coverage', 'junit'],
-    htmlReporter: {
-      outputFile: 'test/reports/unit/completion/unit-tests.html'
-    },
+    reporters: ['coverage', 'junit'],
     junitReporter: {
       outputFile: 'do_not_checkin/karma-reports/temp/TEST-UnitTest.xml',
       suite:'UnitTest'
