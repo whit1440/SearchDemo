@@ -1,5 +1,6 @@
 {
-  "name": "Karma tests",
+  "name": "KarmaTests",
+  "version": "0.0.1",
   "devDependancies": {
     "karma": "^0.10.9",
     "karma-chrome-launcher": "",
