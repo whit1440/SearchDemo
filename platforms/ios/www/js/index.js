@@ -37,38 +37,3 @@ app.service("BookSearch", ["$http", "$q", function($http, $q){
     };
     return BookSearch;
 }]);
-
- /*
-var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicity call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        $("input").change(function(){
-            $.get("https://www.googleapis.com/books/v1/volumes?q=" + $("input").val() + "&maxResults=10", function(response){
-                $("ul").html(" ");
-                for(var i in response.items){
-                    var item = response.items[i];
-                    $("ul").append("<li class='topcoat-list__item'>" + item.volumeInfo.title + "</li>");
-                }
-            });
-        });
-    }
-};
-*/
